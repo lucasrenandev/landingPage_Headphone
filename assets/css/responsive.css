@@ -1,0 +1,99 @@
+@media screen and (max-width: 1200px) {
+    section {
+        grid-template-columns: 1fr;
+        padding: 20px 2%;
+    }
+
+    section .main-image {
+        text-align: center;
+    }
+
+    section .main-image img {
+        width: 400px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    section .main-text {
+        text-align: center;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    * {
+        overflow-x: hidden;
+    }
+    
+    body {
+        position: relative;
+    }
+    
+    header nav ul {
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        width: 200px;
+        height: 30vh;
+        background-color: var(--main-color);
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        border-radius: 5px;
+        transition: all 0.55s ease;
+    }
+
+    header nav ul.open {
+        right: 2%;
+    }
+
+    header nav ul li {
+        padding: 5px 0;
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+    header nav ul li a:hover {
+        color: var(--text-color);
+        transform: translateY(0);
+    }
+
+    header nav ul li a.active {
+        color: var(--other-color);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --big-font: 2.1rem;
+    }
+
+    header {
+        padding: 20px 2%;
+    }
+
+    header nav .header-menu {
+        gap: 15px;
+    }
+    
+    section .main-image img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .items {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .items {
+        display: none;
+    }
+}

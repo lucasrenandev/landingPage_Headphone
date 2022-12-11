@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --background: #101113;
+    --text-color: #fff;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --big-font: 4rem;
+    --small-font: 1rem;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(50.53% 50.53% at 50.23% 49.47%, #414d59 0%, #1d2631 100%);
+}
+
+/* ===== HEADER ===== */
+
+header {
+    padding: 20px 3%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo a i {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li {
+    padding: 10px 20px;
+}
+
+header nav ul li a {
+    color: var(--other-color);
+    font-size: var(--small-font);
+    font-weight: 500;
+    transition: all 0.55s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--main-color);
+}
+
+header nav ul li a.active {
+    color: var(--main-color);
+}
+
+header nav .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .header-menu i {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+header nav .header-menu i.bx-cart {
+    transition: 0.55s ease;
+}
+
+header nav .header-menu i.bx-cart:hover {
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
+header nav .header-menu i.bx-menu {
+    font-size: 2.2rem;
+}
+
+/* ===== SECTION ===== */
+
+section {
+    width: 100%;
+    padding: 20px 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section .main-image img {
+    max-width: 100%;
+}
+
+section .main-text .text {
+    margin-bottom: 4rem;
+}
+
+section .main-text .text h1 {
+    color: var(--text-color);
+    font-size: var(--big-font);
+}
+
+section .main-text .text h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff99;
+}
+
+section .main-text .price h3 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+section .main-text .button-box {
+    margin-top: 2rem;
+}
+
+section .main-text .button-box button {
+    padding: 15px 70px;
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: var(--small-font);
+    font-weight: 500;
+    transition: 0.55s ease;
+}
+
+section .main-text .button-box button:hover {
+    background-color: var(--text-color);
+    color: #000;
+    cursor: pointer;
+}
+
+/* ==== ITEMS ==== */
+
+.items {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.items .item {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.55s ease;
+}
+
+.items .item:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+}
+
+.items .item:nth-child(1) {
+    background-color: var(--main-color);
+}
+
+.items .item:nth-child(2) {
+    background-color: #FF758D;
+}
+
+.items .item:nth-child(3) {
+    background-color: #FFD06D;
+}
+
+.items .item img {
+    max-width: 45px;
+}
+
+/* ==== SCROLL DOWN ==== */
+
+.scroll-down {
+    display: inline-flex;
+    position: absolute;
+    bottom: 4%;
+    right: 8%;
+}
+
+.scroll-down a {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-down a i {
+    margin-left: 15px;
+    font-size: 1.8rem;
+    color: var(--main-color);
+    transition: 0.55s ease;
+}
+
+.scroll-down a i:hover {
+    transform: translateY(-8px);
+}
