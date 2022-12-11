@@ -1,5 +1,7 @@
+/* ===== IMPORTED FONT (GOOGLE FONTS) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* ===== GLOBAL CONFIGURATION ===== */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
     text-decoration: none;
 }
 
+/* ===== GLOBAL VARIABLES ===== */
 :root {
     --background: #101113;
     --text-color: #fff;
@@ -18,6 +21,7 @@
     --small-font: 1rem;
 }
 
+/* ===== BODY ===== */ 
 body {
     width: 100%;
     min-height: 100vh;
@@ -25,7 +29,6 @@ body {
 }
 
 /* ===== HEADER ===== */
-
 header {
     padding: 20px 3%;
 }
@@ -101,7 +104,6 @@ header nav .header-menu i.bx-menu {
 }
 
 /* ===== SECTION ===== */
-
 section {
     width: 100%;
     padding: 20px 15%;
@@ -157,7 +159,6 @@ section .main-text .button-box button:hover {
 }
 
 /* ==== ITEMS ==== */
-
 .items {
     display: inline-flex;
     flex-direction: column;
@@ -201,7 +202,6 @@ section .main-text .button-box button:hover {
 }
 
 /* ==== SCROLL DOWN ==== */
-
 .scroll-down {
     display: inline-flex;
     position: absolute;
