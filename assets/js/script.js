@@ -10,7 +10,7 @@ menuIcon.addEventListener("click", function() {
     menuIcon.classList.toggle("bx-x")
 })
 
-// CHANGE PRODUCTS
+// TOGGLE PRODUCTS
 itemContainer.forEach(item => {
     item.addEventListener("click", function(event) {
         const target = event.currentTarget.id
