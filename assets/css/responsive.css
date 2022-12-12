@@ -66,9 +66,10 @@
     header nav ul li a.active {
         color: var(--other-color);
     }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     :root {
         --big-font: 2.1rem;
     }
@@ -92,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 530px) {
     .items {
         display: none;
     }
